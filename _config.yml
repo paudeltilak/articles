@@ -1,6 +1,12 @@
-title: My Articles Site
-description: A collection of my past writings
-theme: jekyll-theme-cayman  # You can change to any other built-in theme
+# _config.yml
 
-exclude:
-  - "७. तागो बाँध्ने .md"
+title: Your Site Title
+description: A collection of your writings.
+theme: jekyll-theme-cayman # or another theme
+plugins:
+  - jekyll-optional-front-matter
+
+# This is the key part to make your folders work
+optional_front_matter:
+  all:
+    enabled: true
