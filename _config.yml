@@ -8,5 +8,7 @@ plugins:
 
 # This is the key part to make your folders work
 optional_front_matter:
+  extensions:
+    - .md
   all:
     enabled: true
