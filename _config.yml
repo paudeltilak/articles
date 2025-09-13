@@ -2,22 +2,11 @@
 
 title: Your Site Title
 description: A collection of your writings.
-theme: jekyll-theme-cayman
-
+theme: jekyll-theme-cayman # or another theme
 plugins:
   - jekyll-optional-front-matter
 
-# This block tells Jekyll to automatically apply the "default" layout
-# to all files with a .md extension in your repository.
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "default"
-
-# This is the plugin that makes the front matter optional.
-# It's an extra layer of protection to ensure all your files are processed.
+# This is the key part to make your folders work
 optional_front_matter:
   extensions:
     - .md
