@@ -1,3 +1,6 @@
 title: My Articles Site
 description: A collection of my past writings
 theme: jekyll-theme-cayman  # You can change to any other built-in theme
+
+exclude:
+  - "७. तागो बाँध्ने.md"
