@@ -7,12 +7,12 @@ title: My Articles Archive
 
 Welcome! Below are links to all my articles:
 
-{% assign sorted_pages = site.pages | sort: "path" %}
+{% assign file_list = site.static_files | where: "extname", ".md" %}
 
 <ul>
-  {% for page in sorted_pages %}
-    {% if page.path != "index.md" and page.extname == ".md" %}
-      <li><a href="{{ page.url | relative_url }}">{{ page.path }}</a></li>
+  {% for file in file_list %}
+    {% if file.path != "/index.md" %}
+      <li><a href="{{ file.path }}">{{ file.path }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
