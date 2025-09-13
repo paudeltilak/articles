@@ -1,10 +1,17 @@
-# _config.yml
-
 title: Your Site Title
 description: A collection of your writings.
-theme: jekyll-theme-cayman # or another theme
+theme: jekyll-theme-cayman
+
 plugins:
+  - jekyll-default-layout
   - jekyll-optional-front-matter
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
 
 # This is the key part to make your folders work
 optional_front_matter:
