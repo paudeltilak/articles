@@ -12,7 +12,7 @@ Welcome! Below are links to all my articles:
 <ul>
   {% for page in sorted_pages %}
     {% if page.path != "index.md" %}
-      <li><a href="{{ page.url | relative_url }}">{{ page.path }}</a></li>
+      <li><a href="{{ page.url | relative_url }}">{{ page.path | replace: ".md", "" }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
